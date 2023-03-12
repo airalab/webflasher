@@ -6,7 +6,7 @@
   "builds": [
     {
       "chipFamily": "ESP8266",
-      "improv": true,
+      "improv": false,
       "parts": [{ "path": "../firmware/airrohr-firmware_ru.bin", "offset": 0 }]
     }
   ]
