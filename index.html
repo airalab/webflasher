@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robonomics ESP Installer</title>
+
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/simplebar.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+
+  <section class="app">
+
+    <div class="container">
+
+      <div class="top-wrapper">
+
+        <div class="msg invisible" id="customBar" data-simplebar data-simplebar-auto-hide="false" data-simplebar-scrollbar-max-size="70">
+          <esp-web-install-button class="invisible">
+            <span slot="unsupported">This browser doesn't support installing things on ESP devices. <span class="bottom-line">Please use Google Chrome or Microsoft Edge desktop version.</span> </span>
+          </esp-web-install-button>
+          <p class="description"></p>
+        </div>
+    
+        <div class="select-wrapper">
+          <select name="firmware" required>
+            <option value="" disabled selected>Select Firmware</option>
+            <option value="airrohr-firmware_en">airrohr-firmware_en</option>
+            <option value="airrohr-firmware_ru">airrohr-firmware_ru</option>
+          </select>
+      
+          <select name="chip" required>
+            <option class="placeholder" value="" disabled selected>Select chip</option>
+          </select>
+      
+          <button disabeld class="btn btn-unsupported">Connect</button>
+          <esp-web-install-button>
+            <button class="btn" slot="activate">Connect</button>
+          </esp-web-install-button>
+        </div>
+
+      </div>
+
+
+
+
+      <div class="bottom-wrapper">
+        <h1>
+          <span>Robonomics</span>
+          ESP Installer
+        </h1>
+
+        <a target="_blank" href="https://github.com/airalab">Documentation & code</a>
+      </div>
+  
+  
+    </div>
+
+  </section>
+  
+
+
+  <script src="libs/simplebar.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="module" src="https://unpkg.com/esp-web-tools@8.0.1/dist/web/install-button.js?module"></script>
+</body>
+</html>

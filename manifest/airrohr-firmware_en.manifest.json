@@ -1,0 +1,13 @@
+{
+  "name": "airrohr-firmware_en",
+  "new_install_prompt_erase": true,
+  "new_install_improv_wait_time": 10,
+  "description": "Build your DIY sensor and become part of the worldwide, opendata & civictech network. With airRohr you can measure air pollution yourself.",
+  "builds": [
+    {
+      "chipFamily": "ESP8266",
+      "improv": true,
+      "parts": [{ "path": "../firmware/airrohr-firmware_en.bin", "offset": 0 }]
+    }
+  ]
+}
