@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   firmware.addEventListener("change", (e) => {
     const button = document.querySelector('.select-wrapper').querySelector('esp-web-install-button');
-    button.manifest = `manifest/${e.target.value}.manifest.json`;
+    button.manifest = `./manifest/${e.target.value}.manifest.json`;
     addManifestInfo(e.target.value)
   });
 
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // displaying all needed information
   const addManifestInfo = async (manifest) => {
 
-    const manifestJSON = await fetch(`../manifest/${manifest}.manifest.json`)
+    const manifestJSON = await fetch(`./manifest/${manifest}.manifest.json`)
     const manifestResult = await manifestJSON.json();
 
     chips.innerHTML = `<option class="placeholder" value="" disabled selected>Select chip</option>`;
