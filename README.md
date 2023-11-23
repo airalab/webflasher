@@ -1,5 +1,5 @@
 # ROBONOMICS-ESP Installer
 
-This is a demo installer website for [ROBONOMICS-ESP32](https://github.com/LoSk-p/sensors-software).
+This is a demo installer website for ROBONOMICS ESP32 devices
 
-# zirreal.github.io
+# [webflasher.robonomics.network](https://webflasher.robonomics.network)
