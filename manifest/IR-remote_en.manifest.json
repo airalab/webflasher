@@ -2,7 +2,7 @@
   "name": "IR-remote_en",
   "new_install_prompt_erase": true,
   "new_install_improv_wait_time": 10,
-  "description": "The IR Remote control Tasmota firmware work with any USB power supply that supports the QC2, QC3 or USB-PD (power)",
+  "description": "The IR Remote control Tasmota firmware works with any USB power supply that supports the QC2, QC3 or USB-PD (power)",
   "builds": [
     {
       "chipFamily": "ESP32",
