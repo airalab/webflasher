@@ -2,7 +2,7 @@
   "name": "SWS-1G-E-S3-11-23",
   "new_install_prompt_erase": true,
   "new_install_improv_wait_time": 10,
-  "description": "Smart 1-gang wall switch with energy monitoring and Wi-Fi connection(Tasmota firmware)",
+  "description": "Smart 1-gang wall switch with energy monitoring and Wi-Fi connection (Tasmota firmware)",
   "builds": [
     {
       "chipFamily": "ESP32",
