@@ -1,13 +1,18 @@
 {
-  "name": "energy-monitor_en",
+  "name": "em-esp32",
   "new_install_prompt_erase": true,
   "new_install_improv_wait_time": 10,
   "description": "Robonomics Energy Monitoring firmware (fixed Tasmota firmware to work with BL0940 energy meter)",
   "builds": [
     {
+      "chipFamily": "ESP32-C6",
+      "improv": true,
+      "parts": [{ "path": "../firmware/em-esp32/em-esp32c6.factory.bin", "offset": 0 }]
+    },
+    {
       "chipFamily": "ESP32-S3",
       "improv": true,
-      "parts": [{ "path": "../firmware/tasmota32s3.factory.bin", "offset": 0 }]
+      "parts": [{ "path": "../firmware/em-esp32/em-esp32s3.factory.bin", "offset": 0 }]
     }
   ]
 }

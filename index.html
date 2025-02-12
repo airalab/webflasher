@@ -29,18 +29,13 @@
         <div class="select-wrapper">
           <select name="firmware" required>
             <option value="" disabled selected>Select Firmware</option>
-            <option value="IR-remote_en">IR remote</option>
-            <option value="energy-monitor_en">Energy Monitor</option>
-            <option value="SWS-1G-E-11-23">SWS-1G-E-11-23</option>
-            <option value="SWS-2G-E-11-23">SWS-2G-E-11-23</option>
-            <option value="airrohr-firmware_en">airrohr-firmware_en</option>
-            <option value="airrohr-firmware_ru">airrohr-firmware_ru</option>
+            <option value="Altruist">Altruist</option>
+            <option value="em-esp32">Energy Monitor</option>
+            <option value="Hikikomory">Hikikomory v0.1</option>
           </select>
-      
           <select name="chip" required>
             <option class="placeholder" value="" disabled selected>Select chip</option>
           </select>
-      
           <button disabeld class="btn btn-unsupported">Connect</button>
           <esp-web-install-button>
             <button class="btn" slot="activate">Connect</button>
@@ -70,6 +65,6 @@
 
   <script src="libs/simplebar.min.js"></script>
   <script src="js/main.js"></script>
-  <script type="module" src="https://unpkg.com/esp-web-tools@10.0.1/dist/web/install-button.js?module"></script>
+  <script type="module" src="https://unpkg.com/esp-web-tools/dist/web/install-button.js?module"></script>
 </body>
 </html>

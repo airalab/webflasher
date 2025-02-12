@@ -1,0 +1,17 @@
+{
+  "name": "Hikikomory",
+  "new_install_prompt_erase": true,
+  "new_install_improv_wait_time": 10,
+  "description": "Hikikomory Tamagotchi",
+  "builds": [
+    {
+      "chipFamily": "ESP32-C6",
+      "improv": false,
+      "parts": [
+        { "path": "../firmware/Hikikomory/bootloader.bin", "offset": 0 },
+        { "path": "../firmware/Hikikomory/partition-table.bin", "offset": 32768 },
+        { "path": "../firmware/Hikikomory/press_counter.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}
