@@ -1,8 +1,8 @@
 {
-  "name": "altruist-inside",
+  "name": "altruist-insight",
   "new_install_prompt_erase": true,
   "new_install_improv_wait_time": 10,
-  "description": "Firmware for the Altruist Air Quality Monitoring Sensor's Inside Module.",
+  "description": "Firmware for the Altruist Air Quality Monitoring Sensor's Insight Module.",
   "builds": [
     {
       "chipFamily": "ESP32-C6",
