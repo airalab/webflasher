@@ -1,0 +1,17 @@
+{
+  "name": "altruist-insight",
+  "new_install_prompt_erase": true,
+  "new_install_improv_wait_time": 10,
+  "description": "Firmware for the Altruist Air Quality Monitoring Sensor's Insight Module.",
+  "builds": [
+    {
+      "chipFamily": "ESP32-C6",
+      "improv": false,
+      "parts": [
+        { "path": "../firmware/Altruist/latest32c6ins_boot.bin", "offset": 0 },
+        { "path": "../firmware/Altruist/latest32c6ins_part.bin", "offset": 32768 },
+        { "path": "../firmware/Altruist/latest32c6ins_ru_dev.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}
