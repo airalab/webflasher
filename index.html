@@ -18,10 +18,20 @@
     <div class="container">
 
       <div class="top-wrapper">
+        <div class="lang-switcher">
+          <label for="lang-select">Language</label>
+          <select id="lang-select" name="language" aria-label="Language switch">
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+          </select>
+        </div>
 
         <div class="msg invisible" id="customBar" data-simplebar data-simplebar-auto-hide="false" data-simplebar-scrollbar-max-size="70">
           <esp-web-install-button class="invisible">
-            <span slot="unsupported">This browser doesn't support installing things on ESP devices. <span class="bottom-line">Please use Google Chrome or Microsoft Edge desktop version.</span> </span>
+            <span slot="unsupported">
+              <span id="unsupported-main">This browser doesn't support installing things on ESP devices.</span>
+              <span id="unsupported-sub" class="bottom-line">Please use Google Chrome or Microsoft Edge desktop version.</span>
+            </span>
           </esp-web-install-button>
           <p class="description"></p>
         </div>
@@ -29,16 +39,16 @@
         <div class="select-wrapper">
           <select name="firmware" required>
             <option value="" disabled selected>Select Firmware</option>
-            <option value="Altruist_URBAN_EN">Altruist Urban EN</option>
-            <option value="Altruist_URBAN_EN_DEV">Altruist Urban EN DEV</option>
-            <option value="Altruist_URBAN_RU">Altruist Urban RU</option>
-            <option value="Altruist_URBAN_RU_DEV">Altruist Urban RU DEV</option>
-            <option value="Altruist_INSIGHT_EN">Altruist insight EN</option>
-            <option value="Altruist_INSIGHT_EN_DEV">Altruist insight EN DEV</option>
-            <option value="Altruist_INSIGHT_RU">Altruist insight RU</option>
-            <option value="Altruist_INSIGHT_RU_DEV">Altruist insight RU DEV</option>
-            <option value="em-esp32">Energy Monitor</option>
-            <option value="Hikikomory">Hikikomory v1.0</option>
+            <option value="Altruist_URBAN_EN" data-firmware-key="Altruist_URBAN_EN">Altruist Urban EN</option>
+            <option value="Altruist_URBAN_EN_DEV" data-firmware-key="Altruist_URBAN_EN_DEV">Altruist Urban EN DEV</option>
+            <option value="Altruist_URBAN_RU" data-firmware-key="Altruist_URBAN_RU">Altruist Urban RU</option>
+            <option value="Altruist_URBAN_RU_DEV" data-firmware-key="Altruist_URBAN_RU_DEV">Altruist Urban RU DEV</option>
+            <option value="Altruist_INSIGHT_EN" data-firmware-key="Altruist_INSIGHT_EN">Altruist insight EN</option>
+            <option value="Altruist_INSIGHT_EN_DEV" data-firmware-key="Altruist_INSIGHT_EN_DEV">Altruist insight EN DEV</option>
+            <option value="Altruist_INSIGHT_RU" data-firmware-key="Altruist_INSIGHT_RU">Altruist insight RU</option>
+            <option value="Altruist_INSIGHT_RU_DEV" data-firmware-key="Altruist_INSIGHT_RU_DEV">Altruist insight RU DEV</option>
+            <option value="em-esp32" data-firmware-key="em-esp32">Energy Monitor</option>
+            <option value="Hikikomory" data-firmware-key="Hikikomory">Hikikomory v1.0</option>
           </select>
           <select name="chip" required>
             <option class="placeholder" value="" disabled selected>Select chip</option>
@@ -60,7 +70,7 @@
           ESP Installer
         </h1>
 
-        <a target="_blank" href="https://github.com/airalab">Documentation & code</a>
+        <a id="docs-link" target="_blank" href="https://github.com/airalab">Documentation & code</a>
       </div>
   
   
@@ -71,6 +81,7 @@
 
 
   <script src="libs/simplebar.min.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
   <script type="module" src="https://unpkg.com/esp-web-tools/dist/web/install-button.js?module"></script>
 </body>

@@ -6,6 +6,7 @@
   "builds": [
     {
       "chipFamily": "ESP32-C6",
+      "chipLabel": "ESP32-C6",
       "improv": false,
       "parts": [
         { "path": "../firmware/Hikikomory/bootloader.bin", "offset": 0 },

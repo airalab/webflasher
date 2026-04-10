@@ -5,7 +5,8 @@
   "description": "This firmware is for the Altruist Air Quality Monitoring Sensor's Urban (Outdoor) Module.",
   "builds": [
     {
-      "chipFamily": "ESP32-C3 (OLD_VERSION_ALTRUIST)",
+      "chipFamily": "ESP32-C3",
+      "chipLabel": "ESP32-C3 (OLD_VERSION_ALTRUIST)",
       "improv": false,
       "parts": [
         { "path": "../firmware/Altruist/bootloader.bin?v=R_2026-04.02", "offset": 0 },
@@ -16,6 +17,7 @@
     },
     {
       "chipFamily": "ESP32-C6",
+      "chipLabel": "ESP32-C6",
       "improv": false,
       "parts": [
         { "path": "../firmware/Altruist/latest32c6urb_boot.bin?v=R_2026-04.02", "offset": 0 },

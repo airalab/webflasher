@@ -199,6 +199,40 @@ h4 {
   padding-top: calc(100vh / 6);
 }
 
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: var(--gap);
+  color: var(--light-color);
+}
+
+.lang-switcher label {
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+#lang-select {
+  min-width: 88px;
+  width: auto;
+  padding: 8px 28px 8px 10px;
+  margin-right: 0;
+  color: var(--blue-color);
+  border: 2px solid var(--blue-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: var(--main-color);
+  background-image: url("data:image/svg+xml,%3Csvg width='17' height='15' viewBox='0 0 17 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.8096 13.3267C7.59462 14.5682 9.40538 14.5682 10.1904 13.3267L16.5187 3.3189C17.3608 1.98721 16.4039 0.25 14.8283 0.25H2.17168C0.596088 0.25 -0.360794 1.98721 0.481284 3.3189L6.8096 13.3267Z' fill='%2307208F'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 50%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 .msg {
 	height: 100px;
   padding-right:30px;
@@ -285,7 +319,7 @@ h4 {
   z-index: 7;
 }
 
-select {
+.select-wrapper select {
   min-width: 210px;
   width: 100%;
   padding: calc(var(--gap) ) var(--gap);
@@ -305,13 +339,13 @@ select {
   appearance:none;
 }
 
-select:disabled {
+.select-wrapper select:disabled {
   color: var(--grey-color);
   background-image: url("data:image/svg+xml,%3Csvg width='17' height='15' viewBox='0 0 17 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.8096 13.3267C7.59462 14.5682 9.40538 14.5682 10.1904 13.3267L16.5187 3.3189C17.3608 1.98721 16.4039 0.25 14.8283 0.25H2.17168C0.596088 0.25 -0.360794 1.98721 0.481284 3.3189L6.8096 13.3267Z' fill='%23B5C0F1'/%3E%3C/svg%3E%0A");
   border-color: var(--light-purple-color);
 }
 
-select:invalid {
+.select-wrapper select:invalid {
   color: var(--grey-color);
 }     
 
@@ -370,7 +404,7 @@ select:invalid {
     margin-bottom: calc(var(--gap) * 6);
   }
 
-  select {
+  .select-wrapper select {
     margin-right: 0;
     margin-bottom: var(--gap);
   }
